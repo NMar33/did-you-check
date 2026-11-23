@@ -1,6 +1,12 @@
 # did-you-check
 
-This is a checklist for AI coding agents, based on real bugs. While building an open-source app with coding agents, I kept a record of every bug we found: 657 of them over three months. I grouped them by what actually went wrong, not by how they looked, and turned each group into a question you can check in your own code: "Did you check that …?"
+One of the most important things in agentic development is to know what can go wrong. This is a checklist for AI coding agents, based on real bugs that came up while I was building [Slightly Parallel](https://github.com/NMar33/slightly-parallel). It is an open-source project under the MIT license: a dashboard for coding agents (Claude Code, Codex, OpenCode) that keeps all their chats, tasks and decisions in one place, and it has to work on Windows, macOS and Linux.
+
+Every bug was written down and put into a group by its type. There are 657 of them in this list.
+
+The file starts with a short set of questions for the agent about your project, so it can tell which parts apply to you. Then it goes to those sections, reads what broke and why, and looks for the same thing in your code:
+
+"Did you check that …?"
 
 ## How to use it
 
@@ -11,16 +17,10 @@ Read https://github.com/NMar33/did-you-check/blob/main/CHECKLIST.md
 and go through my project with it.
 ```
 
-The agent answers a few questions about your project first, so it only looks at the parts that apply to you. Then, for each question, it checks the code and gives an answer with evidence. At the end it lists what it found, starting with the most serious problems.
+The bugs here will be most useful if you build harnesses and tools for your agents, or apps that have to work on different systems.
 
-## What is inside
-
-- 58 questions in six parts: the product, data and results, the environment, external systems, the user, tests and release.
-- For each question: when it applies, what breaks, a real case, how to check it, and how it is usually fixed.
-- A short list of things to check before you say the work is done.
-
-Most of the bugs come from one project so far. More will be added from other projects over time.
+The repository will be updated once a month, and I will add bugs from my other projects.
 
 ## License
 
-[CC BY 4.0](LICENSE). You are free to use it and change it, as long as you link back here.
+MIT
